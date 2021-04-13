@@ -303,34 +303,34 @@
 }
 </style>
 <body>
-<div class="center" style="width:600px;" >
+<div class="center" style="width:600px;background-color: cornflowerblue;" >
 	<form name="regForm" class="row g-3">
 	
-        <div class="col-12"  style="text-align:center;">
+        <div class="col-12"  style="text-align:center; color: red; font-weight: 900;">
 		    <label for="Registration" class="form-label">Registration</label> <!-- div for heading -->
 		</div>
-		<div class="col-md-6">
-            <label for="inputforfirstname" class="form-label">Enter First Name:</label> <!-- div for First Name -->
+		<div class="col-md-6" >
+            <label for="inputforfirstname" class="form-label" style="background-color: white;color:black; font-weight: bold;">Enter First Name:</label> <!-- div for First Name -->
 			<input type="text"  class="text-line" name="nme10" class="form-control" onblur="valNm()" id="nm1"><p id="p1" style="color: red;"></p>
         </div>
         <div class="col-md-6">
-            <label for="inputforlastname" class="form-label">Enter Last Name:</label> <!-- div for Last Name -->
+            <label for="inputforlastname" class="form-label" style="background-color: white;color:black; font-weight: bold;">Enter Last Name:</label> <!-- div for Last Name -->
 			<input type="text"  class="text-line" name="nme2" class="form-control"  onblur="valNm1()" id="nm2"><p id="p8" style="color: red;"></p>
         </div>
         <div class="col-12">
-            <label for="inputAddress" class="form-label">Enter Address:</label> <!-- div for Address --><br>
+            <label for="inputAddress" class="form-label" style="background-color: white;color:black; font-weight: bold;">Enter Address:</label> <!-- div for Address --><br>
             <input type="text" name="address" class="text-line" onblur="valAd()"  id="ad1" ><p id="p2" style="color: red;"></p>
         </div>
         <div class="col-md-6">
-            <label for="inputZip" class="form-label">ZipCode:</label> <!-- div for zipcode -->
+            <label for="inputZip" class="form-label" style="background-color: white;color:black; font-weight: bold;">ZipCode:</label> <!-- div for zipcode -->
             <input type="number" class="text-line" name="zip" onblur="valzh()" id="zh1" ><p id="p9" style="color: red;"></p>
         </div>
         <div class="col-md-6">
-            <label for="inputphonenumber" class="form-label">Enter phone:</label><!-- div for Phone number -->
+            <label for="inputphonenumber" class="form-label" style="background-color: white;color:black; font-weight: bold;">Enter phone:</label><!-- div for Phone number -->
 			<input type="number" class="text-line" name="phone" onblur="valPh()" id="ph1" ><p id="p4" style="color: red;"></p>
 		</div>
         <div class="col-md-6"><!-- div for State -->
-            <label for="inputState" class="form-label">State</label><br>
+            <label for="inputState" class="form-label" style="background-color: white;color:black; font-weight: bold;">State</label><br>
             <select id="inputState" class="form-select" onchange="valst()" required>
               <option value="0" selected>Choose...</option>
               <option value="Kerala">Kerala</option>
@@ -339,41 +339,41 @@
             </select> <p id="p11" style="color: red;"></p>
         </div>
         <div class="col-md-6"><!-- div for city -->
-            <label for="inputCity" class="form-label">City</label>
+            <label for="inputCity" class="form-label" style="background-color: white;color:black; font-weight: bold;">City</label>
             <input type="text" class="text-line" name="nme1" class="form-control"  onblur="valcity()" id="cty"><p id="p12" style="color: red;"></p>
         </div>
 		<div class="col-md-6"><!-- div for Email -->
-            <label for="inputEmail4" class="form-label">Enter Email:</label>
+            <label for="inputEmail4" class="form-label" style="background-color: white;color:black; font-weight: bold;">Enter Email:</label>
 			<input type="email" class="text-line" name="email" onblur="valEm()"  id="em1" ><p id="p3" style="color: red;"></p>
 		</div>
 		<div class="col-md-6"><!-- div for confirm Email -->
-            <label for="inputEmail4" class="form-label">Confirm Email:</label>
+            <label for="inputEmail4" class="form-label" style="background-color: white;color:black; font-weight: bold;">Confirm Email:</label>
 			<input type="email" class="text-line" name="email1" onblur="valEm1()"  id="em2" ><p id="p10" style="color: red;"></p>
 		</div>
         <div class="col-12"><!-- div for Password Hint -->
-            <label for="inputPassword" class="form-label">Enter new Password. Make sure to add following:</label><br>
-            <input type="radio" id="rd1" disabled> 8 Characters<br>
+            <label for="inputPassword" class="form-label" style="background-color: white;color:black; font-weight: bold;">Enter new Password. Make sure to add following:</label><br>
+            <input type="radio" id="rd1" disabled > 8 Characters<br>
             <input type="radio" id="rd2" disabled> 1 Letter<br>
             <input type="radio" id="rd3" disabled> 1 Number<br>
             <input type="radio" id="rd4" disabled> 1 Special Character<br>
         </div>
         <div class="col-md-6"><!-- div for Password -->
-            <label for="inputPassword" class="form-label">Set Password:</label>
+            <label for="inputPassword" class="form-label" style="background-color: white;color:black; font-weight: bold;">Set Password:</label>
 			<input type="password" class="text-line" name="upass" id="ps1" oninput="valPs()"><p id="p6" style="color: red;"></p>
         </div>
 		<div class="col-md-6"><!-- div for confirm Password -->
-            <label for="inputPassword" class="form-label">Confirm Password:</label>
+            <label for="inputPassword" class="form-label" style="background-color: white;color:black; font-weight: bold;">Confirm Password:</label>
 			<input type="password" class="text-line" name="cupass" id="ps2" onblur="valPs1()"><p id="p7" style="color: red;"></p>
 		</div>
 		
 		<div class="col-12" Style="text-align:center"; >
-			<div class="form-group">
+			
 				<div class="g-recaptcha" data-sitekey="6LcW2KcaAAAAAJsPHW-LgY9MBg-8CjC1ITgRblHq"></div>
 				
 				<input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
-				<div class="help-block with-errors"></div>
-			</div>
-		<input type="submit" value="Submit" class="btn btn-primary" class="text-line" onClick="valNm();valNm1();valzh();valPh();valst();valcity();valEm();valAd();valEm1();valPs();valPs1();valus();return false;">
+				
+			
+		<input type="submit" value="Submit" class="btn btn-primary" style="background-color: forestgreen;" class="text-line" onClick="valNm();valNm1();valzh();valPh();valst();valcity();valEm();valAd();valEm1();valPs();valPs1();valus();return false;">
 		</div>
 
 
