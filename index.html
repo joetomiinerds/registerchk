@@ -275,29 +275,7 @@
       }
     
 </script>
-<script type="text/javascript">
-	var verifyCallback = function(response) {
-	  alert(response);
-	};
-	var widgetId1;
-	var widgetId2;
-	var onloadCallback = function() {
-	  // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
-	  // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
-	  widgetId1 = grecaptcha.render('example1', {
-		'sitekey' : '6LcW2KcaAAAAAJsPHW-LgY9MBg-8CjC1ITgRblHq',
-		'theme' : 'light'
-	  });
-	  widgetId2 = grecaptcha.render(document.getElementById('example2'), {
-		'sitekey' : '6LcW2KcaAAAAAJsPHW-LgY9MBg-8CjC1ITgRblHq'
-	  });
-	  grecaptcha.render('example3', {
-		'sitekey' : '6LcW2KcaAAAAAJsPHW-LgY9MBg-8CjC1ITgRblHq',
-		'callback' : verifyCallback,
-		'theme' : 'dark'
-	  });
-	};
-  </script>
+
 <meta charset="utf-8">
 <title>register</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -328,7 +306,7 @@ async defer>
 </style>
 <body>
 <div class="center" style="width:600px;" >
-	<form name="regForm" class="row g-3">
+	<form name="regForm" class="row g-3" action="javascript:alert(grecaptcha.getResponse(widgetId1));">
 	
         <div class="col-12"  style="text-align:center;">
 		    <label for="Registration" class="form-label">Registration</label> <!-- div for heading -->
@@ -404,4 +382,3 @@ async defer>
 	</div>
 </body>
 </html>
-
