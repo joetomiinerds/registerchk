@@ -279,9 +279,7 @@
 <meta charset="utf-8">
 <title>register</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-async defer>
-</script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <style>
      /* style for textbox line-->*/
@@ -306,7 +304,7 @@ async defer>
 </style>
 <body>
 <div class="center" style="width:600px;" >
-	<form name="regForm" class="row g-3" action="javascript:alert(grecaptcha.getResponse(widgetId1));">
+	<form name="regForm" class="row g-3">
 	
         <div class="col-12"  style="text-align:center;">
 		    <label for="Registration" class="form-label">Registration</label> <!-- div for heading -->
@@ -370,7 +368,8 @@ async defer>
 		
 		<div class="col-12" Style="text-align:center"; >
 			<div class="form-group">
-				<div class="g-recaptcha" data-sitekey="6LcW2KcaAAAAAJsPHW-LgY9MBg-8CjC1ITgRblHq" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+				<div class="g-recaptcha" data-sitekey="6LcW2KcaAAAAAJsPHW-LgY9MBg-8CjC1ITgRblHq"></div>
+				
 				<input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
 				<div class="help-block with-errors"></div>
 			</div>
