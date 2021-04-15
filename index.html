@@ -146,18 +146,18 @@
 	  {
 	   var emailad=document.forms["regForm"]["enemailad"];		//emailad=Email address
 	   var emailad1=document.forms["regForm"]["enemailad1"];	//emailad1=Email address1
-       var emailadvld=/^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$/;	//emailadvld=Email address Validation
-	   var emlermsg="Enter correct Confirm Email";
-	  if(emailad1.value.match(emailadvld))
+       var emailadvld1=/^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$/;	//emailadvld=Email address Validation
+	 
+	  if(emailad.value.match(emailadvld1))
 	  {
 	  document.getElementById("eremailad1").innerHTML="";
-      if(name12.value==name13.value)
+      if(emailad.value==emailad1.value)
 	  {
 	  document.getElementById("eremailad1").innerHTML="";
 	  }
       else
 	  {
-	  document.getElementById("eremailad1").innerHTML=emlermsg;
+	  document.getElementById("eremailad1").innerHTML="Enter correct Confirm Email";
 	  email2ad.focus();
 	  //return false;
 	  }
@@ -165,7 +165,7 @@
 	  }
 	  else
 	  {
-	  document.getElementById("eremailad1").innerHTML=emlermsg;
+	  document.getElementById("eremailad1").innerHTML="Enter correct Confirm Email";
 	  email2ad.focus();
 	  //return false;
 	  }
@@ -248,8 +248,8 @@
 	   var passwrd=document.forms["regForm"]["enpasswrd"];					//passwrd=Password Input
 	   var passwrdcnfrm=document.forms["regForm"]["enpasswrdcnfrm"];		//passwrdcnfrm=Password Confirm Input
        var passwrdcnfrmvld=/^(?=.*\d)(?=.*\W)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;	//passwrdcnfrmvld=Password Confrirm Validation Input
-	   var confrmpassmsg="Enter correct Confirm password";
-	  if(passwrdcnfrm.value.match(passwrdcnfrmvld))
+	  
+	  if(passwrd.value.match(passwrdcnfrmvld))
 	  {
 	  document.getElementById("erpasswrdcnfrm").innerHTML="";
       if(passwrd.value==passwrdcnfrm.value)
@@ -258,7 +258,7 @@
 	  }
       else
 	  {
-	  document.getElementById("erpasswrdcnfrm").innerHTML=confrmpassmsg;
+	  document.getElementById("erpasswrdcnfrm").innerHTML="Enter correct Confirm password";
 	  passwrd2.focus();
 	  //return false;
 	  }
@@ -266,7 +266,7 @@
 	  }
 	  else
 	  {
-	  document.getElementById("erpasswrdcnfrm").innerHTML=confrmpassmsg;
+	  document.getElementById("erpasswrdcnfrm").innerHTML="Enter correct Confirm password";
 	  passwrd2.focus();
 	  //return false;
 	  }
@@ -340,7 +340,7 @@
         </div>
         <div class="col-12">
             <label for="inputAddress" class="form-label" style="background-color: white;color:black; font-weight: bold;">Enter Address:</label> <!-- div for Address --><br>
-            <input type="text" name="adds" class="text-line" onblur="valAdds()"  id="adds1" ><p id="eradds" style="color: red;"></p>
+            <input type="text" name="enadds" class="text-line" onblur="valAdds()"  id="adds1" ><p id="eradds" style="color: red;"></p>
         </div>
         <div class="col-md-6">
             <label for="inputZip" class="form-label" style="background-color: white;color:black; font-weight: bold;">ZipCode:</label> <!-- div for zipcode -->
