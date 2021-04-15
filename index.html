@@ -147,7 +147,7 @@
 	   var emailad=document.forms["regForm"]["enemailad"];		//emailad=Email address
 	   var emailad1=document.forms["regForm"]["enemailad1"];	//emailad1=Email address1
        var emailadvld1=/^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$/;	//emailadvld=Email address Validation
-	 
+		var erreml="Enter correct Confirm Email";
 	  if(emailad.value.match(emailadvld1))
 	  {
 	  document.getElementById("eremailad1").innerHTML="";
@@ -157,7 +157,7 @@
 	  }
       else
 	  {
-	  document.getElementById("eremailad1").innerHTML="Enter correct Confirm Email";
+	  document.getElementById("eremailad1").innerHTML=erreml;
 	  email2ad.focus();
 	  //return false;
 	  }
@@ -165,7 +165,7 @@
 	  }
 	  else
 	  {
-	  document.getElementById("eremailad1").innerHTML="Enter correct Confirm Email";
+	  document.getElementById("eremailad1").innerHTML=erreml;
 	  email2ad.focus();
 	  //return false;
 	  }
@@ -248,7 +248,7 @@
 	   var passwrd=document.forms["regForm"]["enpasswrd"];					//passwrd=Password Input
 	   var passwrdcnfrm=document.forms["regForm"]["enpasswrdcnfrm"];		//passwrdcnfrm=Password Confirm Input
        var passwrdcnfrmvld=/^(?=.*\d)(?=.*\W)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;	//passwrdcnfrmvld=Password Confrirm Validation Input
-	  
+		var errpasswd="Enter correct Confirm password";
 	  if(passwrd.value.match(passwrdcnfrmvld))
 	  {
 	  document.getElementById("erpasswrdcnfrm").innerHTML="";
@@ -258,7 +258,7 @@
 	  }
       else
 	  {
-	  document.getElementById("erpasswrdcnfrm").innerHTML="Enter correct Confirm password";
+	  document.getElementById("erpasswrdcnfrm").innerHTML=errpasswd;
 	  passwrd2.focus();
 	  //return false;
 	  }
@@ -266,7 +266,7 @@
 	  }
 	  else
 	  {
-	  document.getElementById("erpasswrdcnfrm").innerHTML="Enter correct Confirm password";
+	  document.getElementById("erpasswrdcnfrm").innerHTML=errpasswd;
 	  passwrd2.focus();
 	  //return false;
 	  }
